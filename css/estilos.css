@@ -1,0 +1,201 @@
+/*---- GENERALES-----*/
+:focus{
+    outline: 3px solid darkred;
+    padding: 5px;
+}
+.cuerpo {
+    font-family: 'Sono', serif;
+    font-size: 16px;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 15px;
+    background-color: #FFFEFE;
+    box-shadow: 0 0 10px 2px darkgrey;
+}
+/*----------HEADER ------*/
+header{
+    background-image: url("../img/imagen_fondo_CV.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.lang{
+    text-align: center;
+    display: flex;
+    float: right;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+    padding: 0.5em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+.lang a{
+    text-decoration: none;
+    color: black;
+}
+.lang:hover{
+    background-color: lightgray;
+}
+.centrar {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    column-gap: 0.2em;
+}
+img.personal {
+    width:33.3%;
+    margin-top: 2em;
+    margin-bottom: -2em;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+    border: 2px solid black;
+    z-index: 1;
+}
+.datos{
+    
+    text-align: center;
+    margin-bottom: 0.5em;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+     z-index: 0;
+}
+
+/*----- si es desde 0 a hasta 1000px -----*/
+@media (max-width: 1000px){
+    header nav{
+        min-width: 50%;
+        margin: 0 auto;
+    }
+    header nav ul{
+        list-style: none;
+        padding-inline-start: 0;
+        margin: 0;
+        padding: 0;
+    
+    }
+    header nav ul li{
+    
+        text-align: center;
+        margin-bottom: 0.4em;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        padding: 0.5em;
+    }
+    header nav ul li:hover{
+    background-color: lightgray;
+}
+    header nav ul li a{
+        text-decoration: none;
+        color:black;
+    }
+}
+/*------ desde 1000px hasta el maximo -----*/
+@media (min-width : 1000px){
+    header nav{
+        
+        margin: 1.5em 0;
+    }
+    header nav ul{
+        padding-inline-start: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display:flex;   
+    }
+    header nav ul li{
+        text-align: center;
+        flex-direction:row;
+        flex-grow: 1;
+        margin-left: 0.2em;
+    }
+    header nav ul li:first-child a{
+        border-radius: 10px 0 0 10px;
+    }
+    header nav ul li:last-child a{
+        border-radius: 0 10px 10px 0;
+    }
+    header nav ul li a:hover{
+        background-color: lightgray;
+    }
+    nav ul li a{
+        padding: 10px;
+        margin: 0 auto;
+        border: 2px solid black;
+        background-color: white;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+    }
+}
+
+
+/*--------- MAIN ------*/
+main {
+    
+    width: 90%;
+    margin: 2em auto;
+}
+
+/*---------- FOOTER --------*/
+footer{
+    background-color: whitesmoke;
+    border-radius: 0 0 15px 15px;
+    padding: 1em;
+}
+
+footer nav{
+        
+    margin: 0.2em 0;
+}
+footer nav ul{
+    padding-inline-start: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;   
+}
+footer nav ul li{
+    text-align: center;
+    flex-direction:row;
+    flex-grow: 1;
+}
+footer nav ul li a{
+    background-color:white;
+    border: 1px solid black;
+    border-radius:50%;
+    box-shadow: 0 0 3px black ;
+    text-decoration: none;
+    padding: 10px;
+    color:black;
+}
+footer nav ul li a:hover{
+    background-color: lightgray;
+}
+.certificados{
+    display: flex;
+    float: right;
+}
+.informacion-footer{
+    text-align: center;
+}
+.informacion-footer h5{
+    margin-top: 0;
+    padding-top: 0;
+}
+.certificados p{
+    margin-left: 0.5em;
+}
